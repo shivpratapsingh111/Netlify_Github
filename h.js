@@ -1,1 +1,1 @@
-prompt(1)
+<script>prompt(1)</script>
